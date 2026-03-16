@@ -1,0 +1,28 @@
+# Autonomous Drone Landing Vision System
+# Requirements for Raspberry Pi
+
+# Core Vision Processing
+opencv-python==4.8.1.78          # Computer vision operations
+numpy==1.24.3                    # Numerical computing
+
+# Optional: TensorFlow Lite for ML-based classification
+# Uncomment if using --tflite flag
+# tflite-runtime==2.14.0         # Lightweight TF runtime for Pi
+# OR for full TensorFlow (not recommended on Pi 3):
+# tensorflow==2.14.0
+
+# Flight Controller Communication
+dronekit==2.9.2                  # High-level MAVLink API
+pymavlink==2.4.41                # Low-level MAVLink protocol
+
+# System utilities
+pyserial==3.5                    # Serial communication
+
+# Optional: Camera optimization for Raspberry Pi Camera Module
+# picamera2                      # New camera interface (Pi OS Bullseye+)
+# OR
+# picamera==1.13                 # Legacy camera interface
+
+# Development and debugging (optional)
+# matplotlib==3.7.1              # Plotting heatmaps
+# pillow==10.0.0                 # Image manipulation
