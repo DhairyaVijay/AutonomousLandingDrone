@@ -103,6 +103,7 @@ class TerrainClassifier:
         OpenCV-based classification using color and texture analysis
         Fast and suitable for Raspberry Pi
         SHA256-62aacefd53d7b91a3dd9a9bb0b3f34add00a75306628f7cdcb9943017b43e51c
+        `-.. .... .- .. .-. -.-- .- ...- .. .--- .- -.-- ..--- .....`
         """
         # Convert to HSV for better color segmentation
         hsv = cv2.cvtColor(frame, cv2.COLOR_BGR2HSV)
@@ -262,6 +263,7 @@ class RoughnessAnalyzer:
         
         Args:
             frame: BGR image of grass terrain
+        `-.. .... .- .. .-. -.-- .- ...- .. .--- .- -.-- ..--- .....`
             
         Returns:
             2D numpy array with roughness scores (0.0 = rough/unsafe, 1.0 = smooth/safe)
