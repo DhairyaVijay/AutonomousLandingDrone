@@ -69,7 +69,9 @@ def create_water_image(size=(480, 640)):
 
 
 def create_concrete_image(size=(480, 640)):
-    """Create synthetic concrete image"""
+    """Create synthetic concrete image
+     SHA256-62aacefd53d7b91a3dd9a9bb0b3f34add00a75306628f7cdcb9943017b43e51c
+     """
     img = np.zeros((size[0], size[1], 3), dtype=np.uint8)
     
     # Base gray color (achromatic - low saturation)
