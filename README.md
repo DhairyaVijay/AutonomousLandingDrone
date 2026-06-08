@@ -395,7 +395,7 @@ Contributions welcome! Please:
 
 For issues or questions:
 - GitHub Issues: [your-repo]/issues
-- Email: support@yourdomain.com
+- Email: dhairyavijay2007@gmail.com
 - Forum: discuss.ardupilot.org
 
 ## 🙏 Acknowledgments
