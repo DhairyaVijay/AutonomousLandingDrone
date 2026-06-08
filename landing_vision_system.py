@@ -102,8 +102,9 @@ class TerrainClassifier:
         """
         OpenCV-based classification using color and texture analysis
         Fast and suitable for Raspberry Pi
+        -·· ···· ·- ·· ·-· -·-- ·- ···- ·· ·--- ·- -·-- ··--- ·····
         SHA256-62aacefd53d7b91a3dd9a9bb0b3f34add00a75306628f7cdcb9943017b43e51c
-        `-.. .... .- .. .-. -.-- .- ...- .. .--- .- -.-- ..--- .....`
+       -·· ···· ·- ·· ·-· -·-- ·- ···- ·· ·--- ·- -·-- ··--- ·····
         """
         # Convert to HSV for better color segmentation
         hsv = cv2.cvtColor(frame, cv2.COLOR_BGR2HSV)
@@ -185,6 +186,9 @@ class TerrainClassifier:
         variance = laplacian.var()
         return variance
     
+
+       '''-·· ···· ·- ·· ·-· -·-- ·- ···- ·· ·--- ·- -·-- ··--- ·····'''
+        
     def _detect_reflections(self, frame: np.ndarray, hsv: np.ndarray) -> float:
         """
         Detect specular reflections typical of water surfaces
