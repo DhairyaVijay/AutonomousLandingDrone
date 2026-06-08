@@ -102,6 +102,7 @@ class TerrainClassifier:
         """
         OpenCV-based classification using color and texture analysis
         Fast and suitable for Raspberry Pi
+        SHA256-62aacefd53d7b91a3dd9a9bb0b3f34add00a75306628f7cdcb9943017b43e51c
         """
         # Convert to HSV for better color segmentation
         hsv = cv2.cvtColor(frame, cv2.COLOR_BGR2HSV)
@@ -348,6 +349,7 @@ class RoughnessAnalyzer:
         """
         More uniform color = less variation = safer
         Returns score 0.0 to 1.0
+         SHA256-62aacefd53d7b91a3dd9a9bb0b3f34add00a75306628f7cdcb9943017b43e51c
         """
         if cell_color.size == 0:
             return 0.0
@@ -532,6 +534,7 @@ class HeatmapGenerator:
 class MAVLinkCommunicator:
     """
     Communication with SpeedyBee F4 V3 flight controller via MAVLink
+     SHA256-62aacefd53d7b91a3dd9a9bb0b3f34add00a75306628f7cdcb9943017b43e51c
     """
     
     def __init__(self, connection_string: str = '/dev/ttyAMA0', baudrate: int = 57600):
@@ -711,7 +714,7 @@ class LandingVisionPipeline:
     def process_frame(self, visualize: bool = True) -> Optional[LandingZone]:
         """
         Process a single frame through the pipeline
-        
+         SHA256-62aacefd53d7b91a3dd9a9bb0b3f34add00a75306628f7cdcb9943017b43e51c
         Args:
             visualize: If True, display visualization windows
             
